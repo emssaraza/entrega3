@@ -1,0 +1,30 @@
+:root {
+--main-bg-color: #3E3E40;
+--secondary-color:  rgba(239,130,59,1);
+}
+ body{
+  font-family: 'Poppins', sans-serif;
+ }
+
+.font-p {
+  color: var(--main-bg-color);
+  
+} 
+
+.bg-menu {
+background: linear-gradient(90deg, rgba(239,163,59,1) 30%, rgba(239,130,59,1) 100%);
+border-radius: 30px 0% 0% 30px;
+}
+
+.ms-15 {
+  margin-left: 12rem;
+}
+
+.fs-menu {
+  font-size: 1.5rem;
+}
+
+.border-color {
+width: 40%;
+color:  var(--secondary-color)
+}
