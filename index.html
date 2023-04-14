@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="palabras clave del hasitio">
   <title>Tio Banano // Petshop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -16,52 +18,48 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/59838d0f81.js" crossorigin="anonymous"></script>
-  <link  rel="icon"   href="img/favicon.png" type="image/png" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
 </head>
-<div class="social-bar">
-  <a href="https://www.facebook.com/DevCode.la" class="icon icon-color" target="_blank"></a>
-  <a href="https://twitter.com/DevCodela" class="icon icon-color" target="_blank"></a>
-  <a href="https://www.youtube.com/c/devcodela" class="icon icon-color" target="_blank"></a>
-  <a href="https://www.instagram.com/devcodela/" class="icon icon-color" target="_blank"></a>
-</div>
 
 
+<body>
 
-<img class="finger-top" src="img/huella.png" alt="">
-<img class="finger-mid" src="img/huella.png" alt="">
 
-<!-- menu navegacion-->
+  <!--inicio huellas flotantes-->
+  <img class="finger-top" src="img/huella.png" alt="">
+  <img class="finger-mid hidden" src="img/huella.png" alt="">
+  <!--fin huellas flotantes-->
+
+  <!-- menu navegacion-->
 
 
   <nav class="navbar navbar-expand-lg bg-none">
     <div class="container-fluid ">
       <a class="navbar-brand " href="index.html"><img src="img/Logo_Tio_150.png" class="img-fluid" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav justify-content-end fw-semibold gap-4  ">
-        <li class="nav-item ">
-          <a class="nav-link font-p" href="conocenos.html">Conocenos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-p" href="productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-p " href="adopta.html">Adopta!</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white bg-menu pe-5 font-p" href="contacto.html"><i class="fa-solid fa-phone fa-bounce"
-              style="color: #ffffff; padding-right: 10px;"></i>Contacto</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="nav justify-content-end fw-semibold gap-4  ">
+          <li class="nav-item ">
+            <a class="nav-link font-p" href="conocenos.html">Conocenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-p" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-p " href="adopta.html">Adopta!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white bg-menu pe-5 font-p" href="contacto.html"><i
+                class="fa-solid fa-phone fa-bounce" style="color: #ffffff; padding-right: 10px;"></i>Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <!-- fin menu-->
-
-<body>
-  
 
   <!-- barra redes-->
   <div class="social-bar img-fluid">
@@ -72,8 +70,9 @@
   </div>
   <!--fin barra redes-->
 
-  
-    <div class="container-fluid row ">
+  <!--Inicio contenido principal-->
+  <main>
+    <div class="container-fluid row  pt-4">
       <div class="col-12 col-xl-5">
         <h1 class="fs-4">¿Que es Tio Banano?</h2>
 
@@ -94,13 +93,16 @@
         <img src="img/adopcion.jpg" class="rounded-5 img-fluid " alt="perros-adopcion">
       </div>
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
+  </main>
+  <!--fin contenido principal-->
 
-  <!--inicio flotantes-->
-  <div class="col-4 col-xl-12 container-fluid flex-icons justify-content-sm-around hidden">
+  <!--inicio elementos flotantes-->
+  <div class="col-4 col-xl-12 container-fluid flex-icons justify-content-sm-around p-5 hidden">
 
-    <div class="col-xl-4 col-12 bg-white shadow d-flex flex-row align-items-center  rounded-5">
+    <div class="col-xl-4 col-12 bg-white shadow d-flex flex-row align-items-center mx-2 p-3 rounded-5"
+      data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine">
       <img src="img/icono-accesorio.png" alt="">
       <div class="ps-3">
         <div class="fs-3 fw-bold">Accesorios</div>
@@ -108,7 +110,8 @@
       </div>
     </div>
 
-    <div class="col-xl-4 col-12 bg-white shadow  d-flex flex-row align-items-center mx-2 rounded-5">
+    <div class="col-xl-4 col-12 bg-white shadow  d-flex flex-row align-items-center mx-2 p-3 rounded-5"
+      data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-sine">
       <img src="img/icon-ayuda.png" alt="">
       <div class="ps-3">
         <div class="fs-3 fw-bold">Ayuda</div>
@@ -117,7 +120,8 @@
     </div>
 
 
-    <div class="col-12 col-xl-4  bg-white shadow p-3 d-flex flex-row align-items-center mx-2 rounded-5">
+    <div class="col-12 col-xl-4  bg-white shadow p-3 d-flex flex-row align-items-center mx-2 p-3 rounded-5"
+      data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine">
       <img src="img/icon-novedad.png" alt="">
       <div class="ps-3">
         <div class="fs-3 fw-bold">Novedades</div>
@@ -125,7 +129,14 @@
       </div>
     </div>
 
-    <!--fin flotantes-->
+    <!--fin elementos flotantes-->
+
+    <!--Inicio Footer-->
+    <footer class="gradient">
+      <div class="col-xl-12 gradient"></div>
+    </footer>
+
+    <!--Fin Footer-->
 
 
 
@@ -133,6 +144,14 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>
 
-    </body>
+    <!--animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+</body>
+
 
 </html>

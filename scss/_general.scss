@@ -1,0 +1,123 @@
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin-left: 10%;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+@mixin finger($position, $widht, $top, $transform) {
+    position: $position;
+    width: $widht;
+    top: $top;
+    transform: $transform;
+}
+
+.finger-mid {
+    @include finger(absolute, 6%, 16%, translate(-25%, -55%) rotate(10deg));
+    left: 47%;
+    transition: all 2s;
+}
+
+.finger-mid:hover {
+    transform: translate(0px, -15px);
+}
+
+.finger-top {
+    @include finger(absolute, 6%, 0%, translate(8%, 10%) rotate(10deg));
+    right: 96%;
+}
+
+.font-p {
+    color: $main-bg-color;
+    font-size: 1.5rem;
+    transition: all 1s;
+    &:hover {
+        color: $main-bg-color;
+        transform: translate(0px, -15px);
+    }
+}
+
+.bg-menu {
+    background: $gradient;
+    border-radius: 30px 0% 0% 30px;
+}
+
+.ms-15 {
+    margin-left: 11rem;
+}
+
+.border-color {
+    width: 40%;
+    color: $secondary-color;
+}
+
+.social-bar {
+    position: fixed;
+    left: 0;
+    top: 22%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 1.3rem;
+    transition: all 0.5s;
+    &:hover {
+        padding-left: 1.3rem;
+        border-radius: 0 1.5rem 1.5rem 0;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+.icon-color {
+    background: $gradient;
+    &:first-child {
+        border-radius: 0 1rem 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 1rem 0;
+    }
+}
+
+.object-menu {
+    position: fixed;
+    left: 0;
+    bottom: 20%;
+    font-size: 1.3rem;
+    display: flex;
+    z-index: 100;
+}
+
+.object-menu-item {
+    background-color: rgb(241, 241, 241);
+    border-radius: 50px;
+}
+
+.flex-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.rounded-back {
+    background-color: rgba(239, 130, 59, 0.2);
+}
+
+.hidden {
+    display: active;
+}
+
+.menu-form {
+    margin: 2% 20%;
+}
+
+
+

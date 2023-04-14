@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+    .flex-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .social-bar {
+        display: none;
+    }
+}
