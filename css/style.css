@@ -22,6 +22,18 @@ body {
   transform: translate(0px, -15px);
 }
 
+.finger-mid-conocenos {
+  position: absolute;
+  width: 5%;
+  top: 70%;
+  transform: translate(-25%, -55%) rotate(-10deg);
+  left: 40%;
+  transition: all 2s;
+}
+.finger-mid-conocenos:hover {
+  transform: translate(0px, -15px);
+}
+
 .finger-top {
   position: absolute;
   width: 6%;
@@ -60,6 +72,8 @@ body {
 }
 
 .border-color {
+  margin: 8% 0 8% 0;
+  padding-left: 80%;
   width: 40%;
   color: rgb(239, 130, 59);
 }

@@ -26,6 +26,15 @@ body {
     }
 }
 
+.finger-mid-conocenos {
+    @include finger(absolute, 5%, 70%, translate(-25%, -55%) rotate(-10deg));
+    left: 40%;
+    transition: all 2s;
+    &:hover {
+        transform: translate(0px, -15px);
+    }
+}
+
 
 .finger-top {
     @include finger(absolute, 6%, 0%, translate(8%, 10%) rotate(10deg));
@@ -62,6 +71,8 @@ body {
 }
 
 .border-color {
+    margin: 8% 0 8% 0;
+    padding-left: 80%;
     width: 40%;
     color: $secondary-color;
 }
