@@ -141,6 +141,10 @@ body {
   margin: 2% 20%;
 }
 
+.button-conocenos {
+  background-color: #ef823b;
+}
+
 @media (max-width: 1200px) {
   .flex-icons {
     display: flex;

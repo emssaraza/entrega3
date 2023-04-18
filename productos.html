@@ -27,17 +27,15 @@
 
   <!--inicio huellas flotantes-->
   <img class="finger-top" src="img/huella.png" alt="huella-perro">
-  <img class="finger-mid hidden" src="img/huella.png" alt="huella-perro">
-  <!--fin huellas flotantes-->
+   <!--fin huellas flotantes-->
 
   <!-- menu navegacion-->
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid ">
-      <a class="navbar-brand" href="index.html"><img src="img/Logo_Tio_150.png"
-          alt="logo-tio-banano"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><img src="img/Logo_Tio_150.png" alt="logo-tio-banano"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,10 +50,17 @@
             <a class="nav-link font-p menu-medium menu-small" href="adopta.html">Adopta!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white bg-menu pe-5 font-p menu-medium menu-small" href="contacto.html"><i
-                class="fa-solid fa-phone fa-bounce" style="color: #ffffff; padding-right: 10px;"></i>Contacto</a>
+            <a class="nav-link font-p menu-medium menu-small" href="contacto.html"><i
+                class="fa-solid fa-phone fa-bounce" style="color: #3b3b3b; padding-right: 15px;"></i>Contacto</a>
           </li>
         </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-dark mx-3" type="submit">
+            <i class="bi-cart-fill me-1"></i>
+            Carrito
+            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+          </button>
+        </form>
       </div>
     </div>
   </nav>
@@ -71,67 +76,198 @@
   <!--fin barra redes-->
 
   <!--Inicio contenido principal-->
-  <main>
-    <div class="container-fluid row  pt-4">
-      <div class="col-12 col-xl-5">
-        <h1 class="fs-3 font-medium font-small">¿Que es Tio Banano?</h2>
-
-          <div class="container-fluid fs-1 fw-bold font-medium font-small">“El amor por todas las
-            criaturas vivientes es
-            el más noble atributo
-            del ser humano”</div>
-
-          <hr class=" border-color opacity-75  ">
-
-          <div class="container-fluid fs-5 font-medium font-small">Ofrecemos una variedad de productos y accesorios para todo
-            tipo de animales de compañia y parte de las ganancias seran
-            donadas para animales en condicion de vulnerablidad</div>
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="img/descanso.jpg" alt="cerdo-descanso" />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder fs-4">Descanso</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
+                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="button-conocenos btn  mt-auto text-white" href="#">Comprar</a></div>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-      <div class="col-12 col-xl-6 img-fluid">
-        <img src="img/adopcion.jpg" class="rounded-5 img-fluid " alt="perros-adopcion">
-      </div>
     </div>
     </div>
     </div>
-  </main>
+    </div>
+  </section>
   <!--fin contenido principal-->
 
-  <!--inicio elementos flotantes-->
-  <div class="col-4 col-xl-12 container-fluid flex-icons justify-content-sm-around mr-5 p-5 hidden">
 
-    <div class="col-xl-4 col-12 bg-white shadow d-flex flex-row align-items-center mx-2 p-3 rounded-5"
-      data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine">
-      <img src="img/icono-accesorio.png" alt="icono-accesorios">
-      <div class="ps-3">
-        <div class="fs-3 fw-bold">Accesorios</div>
-        <div>Tenemos los mejores accesorios para tu animal de compañia, para que se divierta este seguro y comodo.</div>
-      </div>
-    </div>
-
-    <div class="col-xl-4 col-12 bg-white shadow  d-flex flex-row align-items-center mx-2 p-3 rounded-5"
-      data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-sine">
-      <img src="img/icon-ayuda.png" alt="icono-ayuda">
-      <div class="ps-3">
-        <div class="fs-3 fw-bold">Ayuda</div>
-        <div>Tenemos los mejores accesorios para tu animal de compañia, para que se divierta este seguro y comodo.</div>
-      </div>
-    </div>
-
-
-    <div class="col-12 col-xl-4  bg-white shadow p-3 d-flex flex-row align-items-center mx-2 p-3 rounded-5"
-      data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine">
-      <img src="img/icon-novedad.png" alt="icono-novedades">
-      <div class="ps-3">
-        <div class="fs-3 fw-bold">Novedades</div>
-        <p>Tenemos los mejores accesorios para tu animal de compañia, para que se divierta este seguro y comodo.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <!--fin elementos flotantes-->
 
   <!--Inicio Footer-->
 
@@ -160,8 +296,9 @@
           <h5 class="text-uppercase fs-6">Donde Estamos?</h5>
           <ul class="list-unstyled mb-0 fs-6">
             <li>
-              <a href="https://goo.gl/maps/y2GNQg7Bv1BTwQzw9" target="_blank" class="text-black-50 text-decoration-none"><i
-                  class="fa-solid fa-location fa-bounce" style="color: #404040;"></i> Bogotá, DC 110811, Col</a>
+              <a href="https://goo.gl/maps/y2GNQg7Bv1BTwQzw9" target="_blank"
+                class="text-black-50 text-decoration-none"><i class="fa-solid fa-location fa-bounce"
+                  style="color: #404040;"></i> Bogotá, DC 110811, Col</a>
             </li>
             <li>
               <a href="#!" class="text-black-50 text-decoration-none"><i class="fa-regular fa-at fa-bounce"
