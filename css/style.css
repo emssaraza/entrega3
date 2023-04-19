@@ -141,8 +141,59 @@ body {
   margin: 2% 20%;
 }
 
-.button-conocenos {
+.button-productos {
   background-color: #ef823b;
+}
+
+.container-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  margin-left: 0%;
+}
+.container-gallery .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+.container-gallery .card .card__head {
+  background-color: #ef823b;
+  padding: 0.3em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 1em;
+  white-space: nowrap;
+}
+.container-gallery .card:hover {
+  flex-grow: 25;
+}
+.container-gallery .card:hover img {
+  filter: grayscale(0);
+}
+.container-gallery .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 3em);
+  color: white;
+  background: rgba(235, 105, 19, 0.5);
+  font-size: 1em;
+  transform: rotate(0deg) skew(-1deg);
+}
+.container-gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(70%);
 }
 
 @media (max-width: 1200px) {
@@ -175,6 +226,13 @@ body {
   }
   .font-small {
     transform: scale(85%);
+  }
+  .container-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-gallery .card .card__head {
+    transform: rotate(0deg);
   }
 }
 

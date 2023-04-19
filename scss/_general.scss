@@ -7,7 +7,6 @@ body {
     font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
 }
 
 @mixin finger($position, $widht, $top, $transform) {
@@ -35,7 +34,6 @@ body {
     }
 }
 
-
 .finger-top {
     @include finger(absolute, 6%, 0%, translate(8%, 10%) rotate(10deg));
     right: 96%;
@@ -56,11 +54,11 @@ body {
     border-radius: 30px 0% 0% 30px;
 }
 
-.bg-footer{
+.bg-footer {
     background: $gradient;
     color: white;
     transition: all 1s;
-    &:hover{
+    &:hover {
         color: white;
         transform: scale(1.2);
     }
@@ -140,7 +138,65 @@ body {
     margin: 2% 20%;
 }
 
-.button-conocenos {
+.button-productos {
     background-color: #ef823b;
+}
+ 
+// css galeria
 
+.container-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vmin;
+    overflow: hidden;
+    margin-left: 0%; 
+
+    .card {
+        flex: 1;
+        transition: all 1s ease-in-out;
+        height: 75vmin;
+        position: relative;
+
+        .card__head {
+            background-color: #ef823b;
+            padding: 0.3em;
+            transform: rotate(-90deg);
+            transform-origin: 0% 0%;
+            transition: all 0.5s ease-in-out;
+            min-width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color:white;
+            font-size: 1em;
+            white-space: nowrap;
+        }
+
+        &:hover {
+            flex-grow: 25;
+            img {
+                filter: grayscale(0);
+            }
+            
+            .card__head {
+                text-align: center;
+                top: calc(100% - 3em);
+                color: white;
+                background: rgba(235, 105, 19, 0.5);
+                font-size: 1em;
+                transform: rotate(0deg) skew(-1deg);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 1s ease-in-out;
+            filter: grayscale(70%);
+        }
+     
+       
+    }
 }
