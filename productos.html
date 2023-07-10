@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/59838d0f81.js" crossorigin="anonymous"></script>
   <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="font-awesome.min.css">
 </head>
 
 
@@ -64,164 +65,39 @@
     </div>
   </nav>
 
-  <form class="d-flex float-end">
+  <!-- <form class="d-flex float-end">
     <button class="btn btn-outline-dark mx-3" type="submit">
       <i class="bi-cart-fill me-1"></i>
       Carrito
       <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
     </button>
-  </form>
+  </form> -->
   <!-- fin menu-->
 
-  <!-- barra redes-->
-  <div class="social-bar img-fluid redes-medium">
-    <a href="" class="icon icon-color fa-brands fa-twitter" style="color: #ffffff;" target="_blank"></a>
-    <a href="" class="icon icon-color fa-brands fa-facebook" style="color: #ffffff;" target="_blank"></a>
-    <a href="" class="icon icon-color fa-brands fa-instagram" style="color: #ffffff;" target="_blank"></a>
-    <a href="" class="icon icon-color fa-brands fa-youtube" style="color: #ffffff;" target="_blank"></a>
-  </div>
-  <!--fin barra redes-->
+
 
   <!--Inicio contenido principal-->
-  <section class="py-5">
-    <div class="container">
-      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-  
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3 ">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-            <img class="card-img-top" img alt="Cuidado animales" onmouseout="this.src='img/cuidado.jpg';" onmouseover="this.src='img/cuidado-2.jpg';" src="img/cuidado.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Cuidado</h5>
-                <span class="text-muted">Te ofrecemos los mejores productos para el cuidado de mascotas, 
-                  diseñados con fórmulas y materiales de alta calidad para garantizar su eficacia y seguridad. 
-                  Ven a nuestra tienda y descubre nuestra amplia variedad de productos.</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-            <img class="card-img-top" img alt="Limpieza " onmouseout="this.src='img/higiene.jpg';" onmouseover="this.src='img/higiene-2.jpg';" src="img/higiene.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Limpieza</h5>
-                <span class="text-muted">Ofrecemos los mejores productos de higiene para mascotas, diseñados con fórmulas
-                   y materiales de alta calidad para garantizar su eficacia y seguridad. Ven a nuestra tienda 
-                   y descubre nuestra amplia variedad de productos.</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
+  <input type="text" id="filtro" placeholder="Filtrar por nombre o categoría">
 
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-            <img class="card-img-top" img alt="animales comiendo" onmouseout="this.src='img/comederos.jpg';" onmouseover="this.src='img/comederos-2.jpeg';" src="img/comederos.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Comedores y bebederos</h5>
-                <span class="text-muted">Ofrecemos los mejores comederos y bebederos para mascotas, 
-                  diseñados con materiales de alta calidad para garantizar su comodidad y seguridad. 
-                  Ven a descubrir nuestra amplia variedad de productos en la tienda.</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
+  <div id="tarjeta-productos">
+    <!-- Aquí se generará dinámicamente las tarjetas de productos -->
+</div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-            <img class="card-img-top" img alt="Mascotas de paseo" onmouseout="this.src='img/paseo-2.jpg';" onmouseover="this.src='img/paseo.jpg';" src="img/paseo-2.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Paseo</h5>
-                <span class="text-muted">A nuestros amigos les encanta salir a pasear y disfrutar del aire libre, 
-                  pero sabemos que puede ser un reto llevarlos de forma cómoda y segura. Por eso, te ofrecemos los mejores 
-                  productos para lograrlo.</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
+<div id="popup" class="popup">
+    <p id="popup-message"></p>
+</div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-           <img class="card-img-top" img alt="mascotas jugando" onmouseout="this.src='img/juguetes-2.jpg';" onmouseover="this.src='img/juguetes.jpg';" src="img/juguetes-2.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Juguetes</h5>
-                <span class="text-muted">El juego es una parte primordial en el desarrollo mental y físico de los animales. 
-                  No solo les permite socializar y divertirse, sino que también contribuye a mantenerlos sanos y felices.</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
+<div id="popupcarro" class="popupcarro">
+<h2>Productos Agregados</h2>
+<ul id="lista-productos"></ul>
+<p id="cantidad-productos"></p>
+<p id="suma-total"></p>
+<button id="vaciar-carrito">Vaciar carrito</button>
+<button id="finalizar-compra">Finalizar compra</button>
+</div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
-          <div class="card h-100">
-            <!-- Oferta-->
-            <!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>-->
-            <img class="card-img-top" img alt="Descanso mascotas" onmouseout="this.src='img/descanso.jpg';" onmouseover="this.src='img/descanso-2.jpg';" src="img/descanso.jpg" />
-            <!-- Detalle Productos-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Categoria-->
-                <h5 class="fw-bolder fs-4">Descanso</h5>
-                <span class="text-muted">Dale el mejor descanso con artículos hechos para su comodidad.
-                ¡Haz que tu mascota se sienta feliz con un lugar cómodo para descansar!</span>
-              </div>
-            </div>
-            <!-- Boton-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center"><a class=" text-white  py-2 px-2 rounded-2 text-decoration-none button-productos" href="#">Ver más</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
-  </section>
+
   <!--fin contenido principal-->
 
 
@@ -296,14 +172,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/59838d0f81.js" crossorigin="anonymous"></script>
   <!--animacion -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-
-
+<script src="script.js"></script>
 </body>
 
 
