@@ -13,7 +13,7 @@ const productos = [
   },
   {
     imagen: "img/comederos.jpg",
-    nombre: "Comedero interactivo",
+    nombre: "Comedero",
     categoria: "Juguetes",
     precio: 50000
   },
@@ -64,8 +64,8 @@ const cantidadProductos = document.getElementById("cantidad-productos");
 const sumaTotal = document.getElementById("suma-total");
 const vaciarCarrito = document.getElementById("vaciar-carrito");
 const finalizarCompra = document.getElementById("finalizar-compra");
-
 const productosAgregados = [];
+
 let totalProductos = 0;
 let totalPrecio = 0;
 
@@ -95,11 +95,12 @@ productos.forEach(function(producto) {
     tarjeta.appendChild(botonAgregar);
 
     botonAgregar.addEventListener("click", function() {
-        agregarProducto(producto);
-        mostrarPopup("Producto agregado");
+        agregarProducto(producto)
+        actualizarContadorCarro()
+        mostrarPopup("Producto agregado")
     });
 
-    contenedorTarjetas.appendChild(tarjeta);
+    contenedorTarjetas.appendChild(tarjeta)
 });
 
 // Función para mostrar el popup con el mensaje
@@ -133,9 +134,11 @@ function agregarProducto(producto) {
 
 // Función para vaciar el carrito
 vaciarCarrito.addEventListener("click", function() {
-    productosAgregados.length = 0;
-    totalProductos = 0;
-    totalPrecio = 0;
+    productosAgregados.length = 0
+    totalProductos = 0
+    totalPrecio = 0
+    actualizarContadorCarro ()
+    
 
     // Limpiar la lista de productos en HTML
     listaProductos.innerHTML = "";
@@ -189,14 +192,30 @@ function filtrarProductos() {
         botonAgregar.textContent = "Agregar";
         tarjeta.appendChild(botonAgregar);
 
-        botonAgregar.addEventListener("click", function() {
-            agregarProducto(producto);
-            mostrarPopup("Producto agregado");
-        });
+      
 
         contenedorTarjetas.appendChild(tarjeta);
     });
 }
+// Función para mostrar el carrito
+const popupCarro = document.getElementById("popupcarro")
+const botonCarrito = document.getElementById("boton-carrito")
+botonCarrito.addEventListener("click", function() {
+    popupCarro.classList.add("visible");
+});
+
+const botoncerrarCarro = document.getElementById("cerrar-carro")
+botoncerrarCarro.addEventListener("click", function() {
+    popupCarro.classList.remove("visible");
+});
+
+function actualizarContadorCarro () {
+  const cantidadCarrito = document.getElementById("contador-productos");
+  cantidadCarrito.textContent = productosAgregados.length;
+}
+
+
+
 
 // Evento para el input de filtro
 filtroInput.addEventListener("input", filtrarProductos);

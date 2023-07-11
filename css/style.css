@@ -312,12 +312,16 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
+  display: none;
 }
 
 .popupcarro p {
   margin: 0;
 }
 
+.popupcarro.visible {
+  display: block;
+}
 
 
 
