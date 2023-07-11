@@ -55,44 +55,44 @@ const productos = [
   }
 ];
 
-const contenedorTarjetas = document.getElementById("tarjeta-productos");
-const filtroInput = document.getElementById("filtro");
-const popup = document.getElementById("popup");
-const popupMessage = document.getElementById("popup-message");
-const listaProductos = document.getElementById("lista-productos");
-const cantidadProductos = document.getElementById("cantidad-productos");
+const contenedorTarjetas = document.getElementById("tarjeta-productos")
+const filtroInput = document.getElementById("filtro")
+const popup = document.getElementById("popup")
+const popupMessage = document.getElementById("popup-message")
+const listaProductos = document.getElementById("lista-productos")
+const cantidadProductos = document.getElementById("cantidad-productos")
 const sumaTotal = document.getElementById("suma-total");
-const vaciarCarrito = document.getElementById("vaciar-carrito");
-const finalizarCompra = document.getElementById("finalizar-compra");
+const vaciarCarrito = document.getElementById("vaciar-carrito")
+const finalizarCompra = document.getElementById("finalizar-compra")
 const productosAgregados = [];
 
-let totalProductos = 0;
-let totalPrecio = 0;
+let totalProductos = 0
+let totalPrecio = 0
 
 // Generar tarjetas de productos
 productos.forEach(function(producto) {
     const tarjeta = document.createElement("div");
-    tarjeta.className = "tarjeta";
+    tarjeta.className = "tarjeta"
 
     const imagen = document.createElement("img");
-    imagen.src = producto.imagen;
-    tarjeta.appendChild(imagen);
+    imagen.src = producto.imagen
+    tarjeta.appendChild(imagen)
 
     const nombre = document.createElement("h3");
-    nombre.textContent = producto.nombre;
-    tarjeta.appendChild(nombre);
+    nombre.textContent = producto.nombre
+    tarjeta.appendChild(nombre)
 
-    const categoria = document.createElement("p");
+    const categoria = document.createElement("p")
     categoria.innerHTML = "<span>Categoría:</span> " + producto.categoria;
-    tarjeta.appendChild(categoria);
+    tarjeta.appendChild(categoria)
 
-    const precio = document.createElement("p");
+    const precio = document.createElement("p")
     precio.innerHTML = "<span>Precio:</span> $" + producto.precio.toFixed(0);
-    tarjeta.appendChild(precio);
+    tarjeta.appendChild(precio)
 
     const botonAgregar = document.createElement("button");
-    botonAgregar.textContent = "Agregar";
-    tarjeta.appendChild(botonAgregar);
+    botonAgregar.textContent = "Agregar"
+    tarjeta.appendChild(botonAgregar)
 
     botonAgregar.addEventListener("click", function() {
         agregarProducto(producto)
@@ -106,30 +106,30 @@ productos.forEach(function(producto) {
 // Función para mostrar el popup con el mensaje
 function mostrarPopup(mensaje) {
     popupMessage.textContent = mensaje;
-    popup.style.display = "block";
+    popup.style.display = "block"
 
     // Desaparecer el popup después de 3 segundos
     setTimeout(function() {
-        popup.style.display = "none";
+        popup.style.display = "none"
     }, 3000);
 }
 
 // Función para agregar un producto a la lista de productos agregados
 function agregarProducto(producto) {
-    productosAgregados.push(producto);
+    productosAgregados.push(producto)
     totalProductos++;
-    totalPrecio += producto.precio;
+    totalPrecio += producto.precio
 
     // Actualizar la lista de productos en HTML
     const itemLista = document.createElement("li");
-    itemLista.textContent = producto.nombre;
-    listaProductos.appendChild(itemLista);
+    itemLista.textContent = producto.nombre
+    listaProductos.appendChild(itemLista)
 
     // Actualizar la cantidad de productos en HTML
-    cantidadProductos.textContent = "Cantidad de productos agregados: " + totalProductos;
+    cantidadProductos.textContent = "Cantidad de productos agregados: " + totalProductos
 
     // Actualizar la suma total del precio en HTML
-    sumaTotal.textContent = "Suma total: $" + totalPrecio.toFixed(0);
+    sumaTotal.textContent = "Suma total: $" + totalPrecio.toFixed(0)
 }
 
 // Función para vaciar el carrito
@@ -157,56 +157,56 @@ finalizarCompra.addEventListener("click", function() {
 
 // Función para filtrar los productos
 function filtrarProductos() {
-    const textoFiltro = filtroInput.value.toLowerCase();
+    const textoFiltro = filtroInput.value.toLowerCase()
     const productosFiltrados = productos.filter(function(producto) {
-        const nombre = producto.nombre.toLowerCase();
-        const categoria = producto.categoria.toLowerCase();
-        return nombre.includes(textoFiltro) || categoria.includes(textoFiltro);
+        const nombre = producto.nombre.toLowerCase()
+        const categoria = producto.categoria.toLowerCase()
+        return nombre.includes(textoFiltro) || categoria.includes(textoFiltro)
     });
 
     // Limpiar el contenedor de tarjetas
-    contenedorTarjetas.innerHTML = "";
+    contenedorTarjetas.innerHTML = ""
 
     // Generar las tarjetas de los productos filtrados
     productosFiltrados.forEach(function(producto) {
-        const tarjeta = document.createElement("div");
-        tarjeta.className = "tarjeta";
+        const tarjeta = document.createElement("div")
+        tarjeta.className = "tarjeta"
 
-        const imagen = document.createElement("img");
+        const imagen = document.createElement("img")
         imagen.src = producto.imagen;
         tarjeta.appendChild(imagen);
 
-        const nombre = document.createElement("h3");
+        const nombre = document.createElement("h3")
         nombre.textContent = producto.nombre;
         tarjeta.appendChild(nombre);
 
-        const categoria = document.createElement("p");
+        const categoria = document.createElement("p")
         categoria.innerHTML = "<span>Categoría:</span> " + producto.categoria;
         tarjeta.appendChild(categoria);
 
-        const precio = document.createElement("p");
+        const precio = document.createElement("p")
         precio.innerHTML = "<span>Precio:</span> $" + producto.precio.toFixed(0);
         tarjeta.appendChild(precio);
 
         const botonAgregar = document.createElement("button");
-        botonAgregar.textContent = "Agregar";
-        tarjeta.appendChild(botonAgregar);
+        botonAgregar.textContent = "Agregar"
+        tarjeta.appendChild(botonAgregar)
 
       
 
-        contenedorTarjetas.appendChild(tarjeta);
+        contenedorTarjetas.appendChild(tarjeta)
     });
 }
 // Función para mostrar el carrito
 const popupCarro = document.getElementById("popupcarro")
 const botonCarrito = document.getElementById("boton-carrito")
 botonCarrito.addEventListener("click", function() {
-    popupCarro.classList.add("visible");
+    popupCarro.classList.add("visible")
 });
 
 const botoncerrarCarro = document.getElementById("cerrar-carro")
 botoncerrarCarro.addEventListener("click", function() {
-    popupCarro.classList.remove("visible");
+    popupCarro.classList.remove("visible")
 });
 
 function actualizarContadorCarro () {
@@ -218,4 +218,4 @@ function actualizarContadorCarro () {
 
 
 // Evento para el input de filtro
-filtroInput.addEventListener("input", filtrarProductos);
+filtroInput.addEventListener("input", filtrarProductos)
